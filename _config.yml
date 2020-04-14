@@ -1,0 +1,21 @@
+sitename: Woodland of Thoughts
+
+collections:
+  tags:  
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "tags"
+    values:
+      layout: "tags"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "posts"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
