@@ -1,20 +1,71 @@
-sitename: Woodland of Thoughts
+# Site
+name: "Thoughtlot"
+title: "Thoughtlot"
+description: "Jess Leung"
+logo: 'assets/images/favicon.ico'
+favicon: 'assets/images/favicon.ico'
+font_family: Maven Pro
+baseurl: 
+google_analytics: 'UA-xxxxxxxx-1'
+disqus: 'demowebsite'
+mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
+include: ["_pages"]
+exclude: [README.md, Gemfile, Gemfile.lock, Makefile]
+permalink: /:categories/:title/
+email: jexxers@gmail.com
 
-collections:
-  tags:  
-    output: true
+# Plugins
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-archives
+  - jekyll-figure
+    
+# Archives
+jekyll-archives:
+  enabled:
+    - categories
+  layout: archive
+  permalinks:
+   category: '/:category/:name'
+    
+# Pagination 
+paginate: 6
+paginate_path: /page:num/
+    
+# Other
+highlighter: none
+markdown: kramdown
+kramdown:
+   syntax_highlighter_opts:
+      disable : true
+
+
+# Adsense (change to "enabled" to activate, also your client id and ad slot. Create a new ad unit from your Adsense account to get the slot.)
+adsense: "disabled"
+adsense-data-ad-client: "ca-pub-3412143450191416"
+adsense-data-ad-slot: "1363087678"
+
+# Lazy Images ("enabled" or "disabled")
+lazyimages: "disabled"
+
+# Post Author Box ("enabled" or "disabled")
+authorbox: "disabled"
+
+# Sass
+sass:
+  sass_dir: _sass
+  style: compressed
+
 
 defaults:
   - scope:
       path: ""
-      type: "tags"
-    values:
-      layout: "tags"
-  - scope:
-      path: ""
       type: "posts"
     values:
-      layout: "posts"
+      layout: "post"
   - scope:
       path: ""
     values:
