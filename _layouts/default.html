@@ -38,24 +38,16 @@ ga('send', 'pageview');
 <div class="site-content {% if page.url == '/' %} firstpage {% endif %}">
 
 <div class="container">
-
-    <!-- Site Tag
-    ================================================== -->
-    <p class="sitetag">
-        {{ site.description }}
-    </p>
-
     <!-- Content
     ================================================== -->
     <div class="main-content">
         {{ content }}
     </div>
-
     {% if site.mailchimp-list %}
     <!-- Newsletter
     ================================================== -->
     <div class="newsletter text-center">
-        <span class="h4"><img src="{{ site.baseurl }}/{{ site.logo }}" class="newsletter-logo" alt="{{site.title}}"> &nbsp; Never miss a <b>story</b> from us, subscribe to our newsletter</span>
+        <span class="h4"><img src="{{ site.baseurl }}/{{ site.logo }}" class="newsletter-logo" alt="{{site.title}}"> &nbsp; Never miss a <b>story</b> from me, subscribe to my newsletter</span>
         <form action="{{site.mailchimp-list}}" method="post" name="mc-embedded-subscribe-form" class="wj-contact-form validate" target="_blank" novalidate>
             <div class="mc-field-group d-inline-flex">
             <input type="email" placeholder="Your e-mail" name="EMAIL" class="required email" id="mce-EMAIL" autocomplete="on" required>
@@ -64,7 +56,6 @@ ga('send', 'pageview');
         </form>
     </div>
     {% endif %}
-    
 </div>
 
 <!-- Begin Footer
@@ -87,13 +78,10 @@ ga('send', 'pageview');
 ================================================== -->
 
 <script src="{{ site.baseurl }}/assets/js/prism.js"></script>
-
 <script src="{{ site.baseurl }}/assets/js/theme.js"></script>
-
 {% if site.lazyimages == "enabled" %}
 <script src="{{ site.baseurl }}/assets/js/lazyload.js"></script>
 {% endif %}
-
 {% if page.layout == 'post' %}
 <script id="dsq-count-scr" src="//{{site.disqus}}.disqus.com/count.js"></script>
 {% endif %}
