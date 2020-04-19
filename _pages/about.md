@@ -16,3 +16,19 @@ The future is full of opportunities, so I devise ways to build software in order
 
 In my **free time**, I enjoy storytelling, cooking, producing music, [traveling](travel), and being physically active.  Continuous growth and learning is an integral part of my personal values.
 
+I started this blog to improve my writing, a place to store and organize my trails of thoughts, rants and ramblings.  Words are my own, and do not represent any employer/organization/entity I have been and will be part of.
+
+
+<form action="https://formspree.io/{{site.email}}" method="POST">    
+<p class="mb-4">Contact me to get in touch!</p>
+<div class="form-group row">
+<div class="col-md-6">
+<input class="form-control" type="text" name="name" placeholder="Name*" required>
+</div>
+<div class="col-md-6">
+<input class="form-control" type="email" name="_replyto" placeholder="E-mail Address*" required>
+</div>
+</div>
+<textarea rows="6" class="form-control mb-3" name="message" placeholder="Message*" required></textarea>    
+<input class="btn btn-dark" type="submit" value="Send">
+</form>
