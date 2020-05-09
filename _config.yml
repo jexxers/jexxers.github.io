@@ -27,9 +27,9 @@ plugins:
 jekyll-archives:
   enabled:
     - categories
-  layout: archive
+  layout: categories 
   permalinks:
-   category: '/:category/:name'
+   category: '/categories/:name/'
     
 # Pagination 
 paginate: 6
