@@ -3,7 +3,7 @@ layout: page
 title: Travel
 permalink: /travel
 comments: false
-image: assets/images/travel.jpg
+image: travel.jpg
 imageshadow: true
 ---
 
