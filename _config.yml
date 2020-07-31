@@ -2,8 +2,8 @@
 name: "Thoughtlot"
 title: "Thoughtlot"
 description: "Jess Leung blogs about tech, management, and life"
-logo: 'assets/images/favicon.ico'
-favicon: 'assets/images/favicon.ico'
+logo: 'assets/images/favicon.svg'
+favicon: 'assets/images/favicon.svg'
 font_family: Maven Pro
 baseurl: 
 google_analytics: 'UA-xxxxxxxx-1'

@@ -1,7 +1,10 @@
 ---
 title: Burnout and Embracing Uncertainty
+date: 2020-04-19 00:00:00 -0400
 categories: Life
-image: 20200419_finedog.jpeg
+image:
+  src: ../../assets/images/20200419_finedog.jpeg
+  alt: fine dog
 ---
 
 My burnout journey: how I sabotaged myself, climbed out of a hole, and learned to breathe again.
