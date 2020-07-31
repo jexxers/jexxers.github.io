@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg">
+<title>Anatomy of a Machine Learning Team | Thoughtlot</title>
+<!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Anatomy of a Machine Learning Team | Thoughtlot</title>
+<meta name="generator" content="Jekyll v4.0.0" />
+<meta property="og:title" content="Anatomy of a Machine Learning Team" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Last year, I gave a talk titled “The Anatomy of Machine Learning Teamwork” at BigData/AI Toronto and the Vector Institute. Leading teams is contextual, and this post is specific to managing an applied research team with a focus on natural language processing, particularly within the application of fictional stories. Our successes included creating a novel and monetizable product offering which delighted users. Asides for commercializing our research, the team published a paper, accepted at EMNLP 2019. This post covers team composition. Part2 covers how our work is structured." />
+<meta property="og:description" content="Last year, I gave a talk titled “The Anatomy of Machine Learning Teamwork” at BigData/AI Toronto and the Vector Institute. Leading teams is contextual, and this post is specific to managing an applied research team with a focus on natural language processing, particularly within the application of fictional stories. Our successes included creating a novel and monetizable product offering which delighted users. Asides for commercializing our research, the team published a paper, accepted at EMNLP 2019. This post covers team composition. Part2 covers how our work is structured." />
+<link rel="canonical" href="http://localhost:4000/management/ml-team/" />
+<meta property="og:url" content="http://localhost:4000/management/ml-team/" />
+<meta property="og:site_name" content="Thoughtlot" />
+<meta property="og:image" content="http://localhost:4000/20200502_legoheads.jpeg" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-05-02T00:00:00-04:00" />
+<script type="application/ld+json">
+{"@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/management/ml-team/"},"url":"http://localhost:4000/management/ml-team/","headline":"Anatomy of a Machine Learning Team","dateModified":"2020-05-02T00:00:00-04:00","datePublished":"2020-05-02T00:00:00-04:00","description":"Last year, I gave a talk titled “The Anatomy of Machine Learning Teamwork” at BigData/AI Toronto and the Vector Institute. Leading teams is contextual, and this post is specific to managing an applied research team with a focus on natural language processing, particularly within the application of fictional stories. Our successes included creating a novel and monetizable product offering which delighted users. Asides for commercializing our research, the team published a paper, accepted at EMNLP 2019. This post covers team composition. Part2 covers how our work is structured.","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/images/favicon.svg"}},"image":"http://localhost:4000/20200502_legoheads.jpeg","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+<link href="/assets/css/prism.css" rel="stylesheet">
+<link href="/assets/css/theme.css" rel="stylesheet">
+<script src="/assets/js/jquery.min.js"></script>
+</head>
+
+
+
+
+<body>
+	<!-- defer loading of font and font awesome -->
+	<noscript id="deferred-styles">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Maven+Pro:400,600&display=swap">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	</noscript>
+
+<div class="sidebar">    
+</div>   
+<div class="nav-icon">
+    <div class="hamburger-bar"></div>
+</div>
+<div id="blackover-nav" class="blackover"></div>
+<nav id="menu">
+    <ul>
+        <h3>Navigation</h3>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/categories/tech/">Tech</a></li>
+        <li><a href="/categories/management/">Management</a></li>
+        <li><a href="/categories/life/">Life</a></li>
+    </ul>   
+</nav>
+
+<script src="/assets/js/lunr.js"></script>
+
+<style>
+    
+</style>
+
+<div class="wrap-search">
+    <div class="d-flex align-items-center ml-auto">
+        <i class="fas fa-search show-search"></i>
+        <form class="bd-search ml-3" onSubmit="return lunr_search(document.getElementById('lunrsearch').value);">
+            <input type="text" class="form-control bigradius text-small launch-modal-search" id="lunrsearch" name="q" maxlength="255" value="" placeholder="Type and enter..."/>
+        </form>
+    </div>
+</div>
+
+<div id="lunrsearchresults">
+    <ul></ul>
+</div>
+
+<script src="/assets/js/lunrsearchengine.js"></script>
+
+
+<div class="site-content ">
+
+<div class="container">
+    <!-- Content
+    ================================================== -->
+    <div class="main-content">
+        <div class="entry-header">
+    <!-- Post Title -->
+    <h1 class="posttitle">Anatomy of a Machine Learning Team</h1>
+    <!-- Author & Date  Box -->
+    <div class="d-flex align-items-center mt-4">
+        <div>
+        Written by <a href="/about">Jess</a> on 
+        <span class="post-date"><time class="post-date" datetime="2020-05-02">02 May 2020</time></span>           
+        
+        </div>            
+    </div>
+</div>
+
+<!-- Adsense under title if enabled from _config.yml (change your pub id and slot) -->
+
+
+<!-- Featured Image -->
+
+<div class="entry-featured-image">
+    
+    <img class="featured-image " src="/assets/images/20200502_legoheads.jpeg" alt="Anatomy of a Machine Learning Team">
+    
+</div>
+
+
+
+<!-- Content -->
+<!-- Post, Page Content
+================================================== -->
+<div class="article-post">
+    <!-- Toc if any -->
+    
+    <!-- End Toc -->
+    <p><em>Last year, I gave a talk titled <strong>“The Anatomy of Machine Learning Teamwork”</strong> at BigData/AI Toronto and the Vector Institute.  Leading teams is contextual, and this post is specific to managing an applied research team with a focus on natural language processing, particularly within the application of fictional stories.  Our successes included creating a novel and monetizable product offering which delighted users.  Asides for commercializing our research, the team published a paper, accepted at EMNLP 2019.  <strong>This post covers team composition. <a href="../ml-projects">Part2</a> covers how our work is structured.</strong></em></p>
+
+<p>Functional, component organizational structures work well, if the thing you are trying to optimize is collaboration within a particular function.  For example, engineers can be working on interesting, hard technical problems.  Data scientists can be in their corner hypothesizing, and stirring that data until they find a model that outperforms their last.  Meanwhile, your product team is plotting what your next big feature or function is; and trying to figure out how to get everyone aligned around working on it.</p>
+
+<p>The overhead of communication was getting higher as the company grew, and often coordination happened amongst managers.  This means the people doing the work didn’t always understand the complete picture of why doing this thing was moving the company forward.  Across the organization, we weren’t maximizing the benefit of diversity of thought, leading to not understanding the problem as well as we could, and also leading to suboptimal solutions.  Even within engineering itself, it leads to a slew of headaches as client engineers tried to integrate with APIs built by another engineering team which is operating under their independent timeline and on top of incomplete requirements.  Don’t even get me started with the friction of releasing machine learning models into production.</p>
+
+<p>Over time, we transformed ourselves into cross-functional, feature teams.  Each team gets to own a mission, empowered to frame the macro and micro problems that fit within that mandate, and own the solution to how to address the problems.  Imagine being able to control the full (or at least, most of the) lifecycle of building a product within your team!  Everyone in the team is to collaborate on ideation and execution, to be able to take in perspectives outside of their own.  Together, we design, build, and maintain a large scale distributed system that serves the needs of tens-of-millions of people globally.  We hold each other accountable for continuous improvement not only for our systems, but arguably more important, ourselves.</p>
+
+<p>The data scientists spend their time applying research papers to our data moat, coming up with new approaches, as well as tailoring solutions that fit the needs of our business.  They come up with a variety of creative ways to apply our data to solve real problems.  And finally, they are often our strongest advocate for new types of data we need to collect.</p>
+
+<p>The engineers take on the full stack of software engineering - from the moment a reader opens a story on their phone, to the APIs that fetches the text from our cloud provider, optimized behind our content delivery networks and internal caching layer, to ingesting real-time feedback, which gets routed to our message broker, into our data lake, with a mix of real-time and batch jobs that enable the rest of our company to easily work with, interpret and manage our data into insights and actionable decisions.</p>
+
+<p>Our product manager meanwhile, is talking to our users, figuring out their needs, understand how our product add value in their lives, identify gaps where we’re under-serving them.  It is also crucial for us to understand our potential market, and any competitors that might be already in that space.  Internally by talking to our stakeholders, we ensure that the work we are doing feeds back to the vision of where our company wants to be in 5 to 10 years.</p>
+
+<p>Had I stayed on to grow the team further, I would have advocated for a product designer, someone dedicated to visual communication, human-centered experiences, and user research.  Further along, I would have advocated for subject matter experts in our domain - in this case, someone with a background in writing, editing, and linguistics.</p>
+
+<p>A question I’ve received is “but how do you bridge the cadence between data science and the rest of the engineers?” - we’ll cover that in our next post about <a href="../ml-projects"><strong>The Anatomy of ML Projects</strong></a>.  Stay tuned.</p>
+
+
+</div>
+
+<!-- Comments if not disabled with comments: false -->
+<!-- Comments
+================================================== -->
+ 
+<div class="comments">
+    <button class="btn btn-dark show-comments">Load Comments</button>         
+    <div id="comments">  
+        <h4 class="mb-4">Comments</h4>                 
+            <section class="disqus">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        var disqus_shortname = 'demowebsite'; 
+        var disqus_developer = 0;
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = window.location.protocol + '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+     
+    <div class="clearfix"></div>              
+    </div>    
+</div>       
+
+
+<!-- Share -->
+<div class="share">
+    <p>
+        Share
+    </p>
+    <ul>
+        <li class="ml-1 mr-1">
+            <a target="_blank" href="https://twitter.com/intent/tweet?text=Anatomy of a Machine Learning Team&url=http://localhost:4000/management/ml-team/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                <i class="fab fa-twitter"></i>
+            </a>
+        </li>
+
+        <li class="ml-1 mr-1">
+            <a target="_blank" href="https://facebook.com/sharer.php?u=http://localhost:4000/management/ml-team/" onclick="window.open(this.href, 'facebook-share', 'width=550,height=435');return false;">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+        </li>
+
+        <li class="ml-1 mr-1">
+            <a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/management/ml-team/" onclick="window.open(this.href, 'width=550,height=435');return false;">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </li>
+
+    </ul>
+</div>
+
+
+<!-- Related Post -->
+<!-- Related Posts
+================================================== -->
+<div class=" related-posts ">  
+
+    
+    <h2 class="text-center mb-4">Explore more like this</h2>
+    
+    
+    <div class="d-flex justify-content-center align-items-center">
+    <!-- Categories -->
+    
+    
+    <a class="smoothscroll badge badge-primary text-capitalize" href="/categories/management">management</a>                
+    
+    </div>
+
+    
+    
+    
+    <div class="blog-grid-container">
+        
+        
+            
+            
+        
+            
+        
+            
+        
+        
+        
+            
+            
+        
+            
+        
+            
+        
+        
+        
+            
+            
+        
+            
+        
+            
+            <!-- begin post -->
+<div class="blog-grid-item">
+  <div class="card h-100">
+    <div class="maxthumb">
+      <a href="/management/ml-projects/">
+      
+        
+        <img class="img-thumb" src="/assets/images/20200503_jazzband.jpeg" alt="Anatomy of Machine Learning Projects"> 
+        
+      
+      </a>
+    </div>
+    <div class="card-body">
+      <h2 class="card-title"><a class="text-dark" href="/management/ml-projects/">Anatomy of Machine Learning Projects</a></h2>
+      <h4 class="card-text">Last year, I gave a talk titled “The Anatomy of Machine Learning Teamwork” at BigData/AI Toronto and the Vector Institute. Leading teams is contextual, and this post is specific to...</h4>
+    </div>
+    <div class="card-footer bg-white">
+      <div class="wrapfooter">
+        
+        
+        <span class="post-category"><a href="/categories/management">management</a></span>
+        
+        <span class="post-date">03 May 2020</span>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end post -->
+
+            
+            
+            
+        
+        
+        
+            
+            
+        
+            
+        
+            
+        
+        
+        
+            
+            
+        
+            
+        
+            
+        
+        
+        </div>        
+</div>
+
+
+    </div>
+    
+    <!-- Newsletter
+    ================================================== -->
+    <div class="newsletter text-center">
+        <span class="h4"><img src="/assets/images/favicon.svg" class="newsletter-logo" alt="Thoughtlot"> &nbsp; Never miss a <b>story</b> from me, subscribe to my newsletter</span>
+        <form action="https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b" method="post" name="mc-embedded-subscribe-form" class="wj-contact-form validate" target="_blank" novalidate>
+            <div class="mc-field-group d-inline-flex">
+            <input type="email" placeholder="Your e-mail" name="EMAIL" class="required email" id="mce-EMAIL" autocomplete="on" required>
+            <input type="submit" value="Subscribe" name="subscribe" class="heart">
+            </div>
+        </form>
+    </div>
+    
+</div>
+
+<!-- Begin Footer
+================================================== -->
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-sm-12 text-center text-lg-left">
+        Copyright © 2020 Thoughtlot 
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- End Footer
+================================================== -->
+
+</div> <!-- /.site-content -->
+
+<!-- Scripts (if you need bootstrap.js, please add it yourself. I didn't use it for performance reasons, it was not needed in this theme)
+================================================== -->
+
+<script src="/assets/js/prism.js"></script>
+<script src="/assets/js/theme.js"></script>
+
+
+<script id="dsq-count-scr" src="//demowebsite.disqus.com/count.js"></script>
+
+
+</body>
+</html>
