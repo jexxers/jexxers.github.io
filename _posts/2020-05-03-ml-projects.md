@@ -1,6 +1,6 @@
 ---
 title: Anatomy of Machine Learning Projects
-categories: Management
+categories: management
 image: 20200503_jazzband.jpeg
 ---
 

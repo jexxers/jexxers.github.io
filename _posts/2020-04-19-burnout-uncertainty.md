@@ -1,6 +1,6 @@
 ---
 title: Burnout and Embracing Uncertainty
-categories: Life
+categories: life
 image: 20200419_finedog.jpeg
 ---
 
