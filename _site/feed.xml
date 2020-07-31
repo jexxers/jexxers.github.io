@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Thoughtlot</title>
+    <description>Jess Leung blogs about tech, management, and life</description>
+    <link>/</link>
+    <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 05 Jan 2021 10:02:52 -0500</pubDate>
+    <lastBuildDate>Tue, 05 Jan 2021 10:02:52 -0500</lastBuildDate>
+    <generator>Jekyll v4.0.0</generator>
+    
+      <item>
+        <title>Tech Idioms</title>
+        <description>&lt;p&gt;Over the course of my career, I’ve found individuals that walk around spewing a fixed set of idioms.  Not understanding them, this feels posey.  However, turns out they can be pretty powerful once you understand them.  Here are some of my favourite tech idioms.&lt;/p&gt;
+
+&lt;h2 id=&quot;occams-razor-law-of-parsimony&quot;&gt;Occam’s Razor (Law of Parsimony)&lt;/h2&gt;
+
+&lt;p&gt;&lt;em&gt;“With competing hypotheses about the same prediction, one should select the solution with the fewest assumptions.”&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;I love this saying as it accelerates decision making between multiple valid choices.  I’m a sucker for saving time and cognitive energy.  Best of all, I find the simplest answer will often be the most correct as well.  Ineviably, some subtleties may be glossed over or missed by a simple answer.  However, a simple solution is often more universal and generalizable in all sorts of situations.&lt;/p&gt;
+
+&lt;h2 id=&quot;you-aint-gonna-need-it&quot;&gt;“You ain’t gonna need it”&lt;/h2&gt;
+
+&lt;p&gt;Prefer iteration over heavy upfront planning.  This is important as we often forget that innovation requires rapid experimentation.  While one can think for long periods, eventually you’ll need to deliver and test your ideas.  I strive to hit the right balance between planning enough, and execution.  At larger scale, organizations hire a mix of people that will focus on both disruptive and sustaining innovation.&lt;/p&gt;
+
+&lt;h2 id=&quot;theres-more-than-one-way-to-skin-a-cat&quot;&gt;“There’s more than one way to skin a cat”&lt;/h2&gt;
+
+&lt;p&gt;Disclaimer: I do not condone animal cruelty!&lt;/p&gt;
+
+&lt;p&gt;This is often a reminder that there’s multiple journeys in order to fulfill a goal.  Don’t overthink.  Weigh your options.  Commit to the simplest one that will support evolving requirements.  Bias towards action.&lt;/p&gt;
+
+&lt;h2 id=&quot;goodharts-law&quot;&gt;Goodhart’s Law&lt;/h2&gt;
+
+&lt;p&gt;&lt;em&gt;“When a measure becomes a target, it ceases to be a good measure”&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;If this isn’t self-explanatory, imagine any scenario where people are rewarded for a certain task that can be measured.  Most often, people will find ways to gamify the situation, and find loop-holes in the way you’re measuring them.  Take for example, lines of code or story points, both terrible measures of developer productivity.  In the former, developers can easily pad their code or even worse implement useless/redundant functionality.  In the latter, teams can easily inflate their numbers and drastically overestimate in order to look good (aka “sandbagging”).  I’m not trying to say all metrics are bad, however they need to be re-examined from time to time and carefully considered what purpose they are serving.  Does this metric drive you closer to your outcome?  Or are you just producing more output?&lt;/p&gt;
+
+&lt;h2 id=&quot;sisyphean-effort&quot;&gt;Sisyphean Effort&lt;/h2&gt;
+
+&lt;p&gt;In Greek mythology, Sisyphus was a man who was trying to be clever.  His punishment was to push a boulder up a steep hill.  As the boulder reaches the top, it  inevitably rolls down again,  repeatedly, for all eternity.  Some developers feel this way about their work, which is a pity and a shame.  If you ever find yourself this way, why are you willing to stay in such a shitty situation?  Work on something that brings you joy, with people that energize you!&lt;/p&gt;
+</description>
+        <pubDate>Tue, 12 May 2020 00:00:00 -0400</pubDate>
+        <link>/tech/tech-idioms/</link>
+        <guid isPermaLink="true">/tech/tech-idioms/</guid>
+        
+        
+        <category>tech</category>
+        
+      </item>
+    
+      <item>
+        <title>Anatomy of Machine Learning Projects</title>
+        <description>&lt;p&gt;&lt;em&gt;Last year, I gave a talk titled &lt;strong&gt;“The Anatomy of Machine Learning Teamwork”&lt;/strong&gt; at BigData/AI Toronto and the Vector Institute.  Leading teams is contextual, and this post is specific to managing an applied research team with a focus on natural language processing, particularly within the application of fictional stories.  Our successes included creating a novel and monetizable product offering which delighted users.  Asides for commercializing our research, the team published a paper, accepted at EMNLP 2019.  &lt;strong&gt;This post covers how the team is organized, and collaborate together. &lt;a href=&quot;../ml-team&quot;&gt;Part 1&lt;/a&gt; covers team composition.&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;two-questions&quot;&gt;Two Questions&lt;/h1&gt;
+
+&lt;p&gt;As a team, we face these questions repeatedly:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Will users find value in it?&lt;/strong&gt;  Nobody wants to waste time building something that nobody will use or find value in.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Is it possible to build?&lt;/strong&gt;  Software projects can be risky, and there are plenty of things that are possible, but hard under tight constraints.  When you introduce machine learning into this mix, some things are not only hard, but impossible.  There is a tonne of excitement right now of what AI/ML/DL can do, but we need to separate reality from hype.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.mindtheproduct.com/dual-track-agile-messy-leads-innovation/&quot;&gt;Dual Track Agile&lt;/a&gt; provides a framework for two phases: discovery and delivery.  The team generally participates in both tracks.  In the &lt;em&gt;discovery phase&lt;/em&gt;, we are trying to learn what users value.  In the &lt;em&gt;delivery phase&lt;/em&gt;, we are optimizing for scale and quality.&lt;/p&gt;
+
+&lt;h1 id=&quot;discovery-for-ml-teams&quot;&gt;Discovery for ML Teams&lt;/h1&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../assets/images/20200503_ml_discovery.png&quot; alt=&quot;ML Discovery&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This mental model provides a baseline for all teams, regardless if they have data practitioners on them or not, as they share many characteristics.  Take for example, in any situation we always start with a problem.  As we understand the problem better, we can also devise goals and metrics to target.  The outcome of the discovery phase involves taking a series of divergent discoveries that converge into iterable solutions that keep usability and feasibility in mind.  After we deploy the new or enhanced feature to the user, the discovery track will take new learnings from the delivery phase.&lt;/p&gt;
+
+&lt;p&gt;A major differentiator to how machine learning teams will differ from traditional software teams is the need to thoroughly examine the data available, as well as go through a literature review of existing solutions.  These are skills that uniquely your data scientists (and engineers) will bring to your ML teams.  Over time, you might find that as you’re years into the ML journey that you’re starting to exhaust your sources of data – discovery is also a good time to identify what new sources of data you might want to design into your product, or to acquire through other means.&lt;/p&gt;
+
+&lt;h1 id=&quot;delivery-for-ml-teams&quot;&gt;Delivery for ML Teams&lt;/h1&gt;
+
+&lt;p&gt;The delivery phase follows a similar lifecycle as traditional software.  At this point, your team has identified a need to address, and have decided the measure of success.  They have an educated guess that the solution they’ve come up with, is both deliverable within a foreseeable timeline as well as a best guess on the impact it’ll make.  With a plan in hand, your team starts coding, building, and testing a solution.  Assuming you were able to develop a model that fits, then you deploy, scale, and monitor your solution in production.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../assets/images/20200503_ml_delivery.png&quot; alt=&quot;ML Delivery&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I am going to zoom into how delivery differs when you have data scientists at your company.  Data scientists across the industry will have varying levels of scope.  The joy of working at a smaller organization (in my opinion) is being able to take ownership of the end-to-end lifecycle of your work.  In this case, our data scientists pick an environment they want to prototype in.  This will depend on how data and compute hungry the model is.  Afterwards, data scientists take time back and forth to cleanse, transform, aggregate data into useful signals for their model.  Whilst taking a variety of approaches, and evaluating them based on the metrics you decided on in discovery.  One of the hardest things to accept about the nature of data science work is that it is risky, and the possibility of failing is very real.  The important thing here to be able to identify when to cut your losses, and be courageous to end it.  With every failure, you need to conduct an error analysis so that you can try to at least understand how and why it failed.  This is a crucial step else your organization is not going to be able to build upon its learnings, and develop an intuition for what might work (or not) moving forwards.  Many failed attempts later, you might find one that we’re satisfied with.  Or conclude that there are diminishing returns for your effort.  Or that it is not possible to push the performance of your model any further at the current moment.  But if you are so lucky to make it out of the development phase, you can finally start thinking about deploying this model into production, periodically re-training your model, serving, and continuous monitoring the performance of your model to detect any shifts in the distribution of data you’re expecting.&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 03 May 2020 00:00:00 -0400</pubDate>
+        <link>/management/ml-projects/</link>
+        <guid isPermaLink="true">/management/ml-projects/</guid>
+        
+        
+        <category>management</category>
+        
+      </item>
+    
+      <item>
+        <title>Anatomy of a Machine Learning Team</title>
+        <description>&lt;p&gt;&lt;em&gt;Last year, I gave a talk titled &lt;strong&gt;“The Anatomy of Machine Learning Teamwork”&lt;/strong&gt; at BigData/AI Toronto and the Vector Institute.  Leading teams is contextual, and this post is specific to managing an applied research team with a focus on natural language processing, particularly within the application of fictional stories.  Our successes included creating a novel and monetizable product offering which delighted users.  Asides for commercializing our research, the team published a paper, accepted at EMNLP 2019.  &lt;strong&gt;This post covers team composition. &lt;a href=&quot;../ml-projects&quot;&gt;Part2&lt;/a&gt; covers how our work is structured.&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Functional, component organizational structures work well, if the thing you are trying to optimize is collaboration within a particular function.  For example, engineers can be working on interesting, hard technical problems.  Data scientists can be in their corner hypothesizing, and stirring that data until they find a model that outperforms their last.  Meanwhile, your product team is plotting what your next big feature or function is; and trying to figure out how to get everyone aligned around working on it.&lt;/p&gt;
+
+&lt;p&gt;The overhead of communication was getting higher as the company grew, and often coordination happened amongst managers.  This means the people doing the work didn’t always understand the complete picture of why doing this thing was moving the company forward.  Across the organization, we weren’t maximizing the benefit of diversity of thought, leading to not understanding the problem as well as we could, and also leading to suboptimal solutions.  Even within engineering itself, it leads to a slew of headaches as client engineers tried to integrate with APIs built by another engineering team which is operating under their independent timeline and on top of incomplete requirements.  Don’t even get me started with the friction of releasing machine learning models into production.&lt;/p&gt;
+
+&lt;p&gt;Over time, we transformed ourselves into cross-functional, feature teams.  Each team gets to own a mission, empowered to frame the macro and micro problems that fit within that mandate, and own the solution to how to address the problems.  Imagine being able to control the full (or at least, most of the) lifecycle of building a product within your team!  Everyone in the team is to collaborate on ideation and execution, to be able to take in perspectives outside of their own.  Together, we design, build, and maintain a large scale distributed system that serves the needs of tens-of-millions of people globally.  We hold each other accountable for continuous improvement not only for our systems, but arguably more important, ourselves.&lt;/p&gt;
+
+&lt;p&gt;The data scientists spend their time applying research papers to our data moat, coming up with new approaches, as well as tailoring solutions that fit the needs of our business.  They come up with a variety of creative ways to apply our data to solve real problems.  And finally, they are often our strongest advocate for new types of data we need to collect.&lt;/p&gt;
+
+&lt;p&gt;The engineers take on the full stack of software engineering - from the moment a reader opens a story on their phone, to the APIs that fetches the text from our cloud provider, optimized behind our content delivery networks and internal caching layer, to ingesting real-time feedback, which gets routed to our message broker, into our data lake, with a mix of real-time and batch jobs that enable the rest of our company to easily work with, interpret and manage our data into insights and actionable decisions.&lt;/p&gt;
+
+&lt;p&gt;Our product manager meanwhile, is talking to our users, figuring out their needs, understand how our product add value in their lives, identify gaps where we’re under-serving them.  It is also crucial for us to understand our potential market, and any competitors that might be already in that space.  Internally by talking to our stakeholders, we ensure that the work we are doing feeds back to the vision of where our company wants to be in 5 to 10 years.&lt;/p&gt;
+
+&lt;p&gt;Had I stayed on to grow the team further, I would have advocated for a product designer, someone dedicated to visual communication, human-centered experiences, and user research.  Further along, I would have advocated for subject matter experts in our domain - in this case, someone with a background in writing, editing, and linguistics.&lt;/p&gt;
+
+&lt;p&gt;A question I’ve received is “but how do you bridge the cadence between data science and the rest of the engineers?” - we’ll cover that in our next post about &lt;a href=&quot;../ml-projects&quot;&gt;&lt;strong&gt;The Anatomy of ML Projects&lt;/strong&gt;&lt;/a&gt;.  Stay tuned.&lt;/p&gt;
+
+</description>
+        <pubDate>Sat, 02 May 2020 00:00:00 -0400</pubDate>
+        <link>/management/ml-team/</link>
+        <guid isPermaLink="true">/management/ml-team/</guid>
+        
+        
+        <category>management</category>
+        
+      </item>
+    
+      <item>
+        <title>Burnout and Embracing Uncertainty</title>
+        <description>&lt;p&gt;My burnout journey: how I sabotaged myself, climbed out of a hole, and learned to breathe again.&lt;/p&gt;
+
+&lt;p&gt;In the latter half of 2019, I was in a perpetual state of malaise.  A friend of mine at work remarked how I was no longer my upbeat, positive self.  Slowly turning into a muted grey in the adage about the &lt;a href=&quot;https://en.wikipedia.org/wiki/Boiling_frog&quot;&gt;boiling frog&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;For a long period, I overcommitted unreasonable amounts of work. I had unrealistic expectations for myself. Work which had been novel and engaging transformed into impediments towards my growth. My goals pushed aside to keep all the plates spinning day-to-day.  The routine responsibilities engulfed the free time I had as well.  Time I had carved out to stay on top of industry news, deepen my knowledge, and explore new ideas. People across the organization respected my expertise, recognized my work ethic, and praised each milestone I achieved. While this external validation fuelled me for a while, it was not sustainable. I was experiencing burnout.&lt;/p&gt;
+
+&lt;p&gt;Managing others is difficult, much more so than I ever anticipated. There were times where I wished I didn’t care so much about everyone’s well being, but I did.  Shaping and reinforcing the environment to maximize people’s &lt;a href=&quot;https://www.youtube.com/watch?v=u6XAPnuFjJc&quot;&gt;autonomy, mastery, and purpose&lt;/a&gt;. Active listening and exhibiting &lt;a href=&quot;https://www.youtube.com/watch?v=MIh_992Nfes&quot;&gt;radical candor&lt;/a&gt; with every interaction requires being fully present. Coaching people through crafting their development plans to reach their &lt;a href=&quot;https://www.youtube.com/watch?v=L0PKWTta7lU&quot;&gt;self-actualization&lt;/a&gt;.  Dedicating myself to serve others, I failed to take responsibility for my own needs.&lt;/p&gt;
+
+&lt;p&gt;One day, I had enough and decided I would &lt;a href=&quot;https://www.youtube.com/watch?v=C_igfnctYjA&quot;&gt;job craft&lt;/a&gt; my way out of this hole I’ve dug myself in.  I would take into account all the tasks I had, create opportunities for others to lead, own and evolve.  Evaluate my relationships at work, spend more time with the teams that energized me, and less with those that sucked my energy away.  I would reframe my job, and remind myself of the purpose of it.  Map out my motives, passions, strengths - viola, off we go, problems solved.  &lt;a href=&quot;https://en.wikipedia.org/wiki/Queueing_theory&quot;&gt;Queueing theory&lt;/a&gt; points out that at max capacity, response time approaches &lt;em&gt;infinity&lt;/em&gt;.  I am not arguing that job crafting doesn’t work, I was not successful at this particular instance of it.  During a routine sync with a colleague, the stress finally got to me.  We left the confines of the meeting room late in the afternoon, and went for a brisk walk.  She urged me to advocate for what I needed to thrive again, she gave me “permission” I kept from myself.  Later that week, I negotiated for a sabbatical and role change - I got both without any pushback.  You can change your work, how you feel about your work, but sometimes you need a &lt;a href=&quot;https://www.youtube.com/watch?v=ccLbdZeaWl4&quot;&gt;change in your environment&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;A week after I hit a hard reset on work and life, I took off to Israel.  I started a meditation habit, journaled daily, hiked until my feet were sore, danced in the desert, hung out with locals, had deep meaningful conversations about life, and accidentally fell in love.  &lt;strong&gt;Most importantly, I finally felt like I had control over my life again.&lt;/strong&gt;  Being disconnected from my routine surroundings provided an opportunity for self-reflection.  Finally, my mind, body, and soul could hear each other again.  I had not felt so content, at peace, fulfilled, and connected to my inner-self in a long while.  I let life’s daily frustrations get me down, and failed to  realize that not only were the problems solve-able, they have the capacity to be enjoy-able.  In my drive towards clarity, I forgot to embrace uncertainty.  Life rarely goes as planned, and my greatest takeaway is to live with intention.  Maximize your life experiences so that they bring you joy.  At any given moment, I would like to say that I lived my biggest, boldest self, and ready to face my mortality.  I aspire to challenge my assumptions about how life &lt;em&gt;should&lt;/em&gt; play out, and focus on envisioning how I want life to be and making that into a reality.&lt;/p&gt;
+
+&lt;p&gt;Looking back, I have no regrets despite how exhausted I felt, and how challenging it felt.  Scaling companies is a turbulent and exciting affair, and leadership stretched me in ways I could have never imagined.  It afforded me a glimpse into how businesses strategize, communicate, coordinate, and execute.  The learnings, growth, and experience I gained are invaluable.  The trust, respect, relationships I established over the years will be cherished for many more years.&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 19 Apr 2020 00:00:00 -0400</pubDate>
+        <link>/life/burnout-uncertainty/</link>
+        <guid isPermaLink="true">/life/burnout-uncertainty/</guid>
+        
+        
+        <category>life</category>
+        
+      </item>
+    
+  </channel>
+</rss>
