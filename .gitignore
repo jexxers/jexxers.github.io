@@ -1,4 +1,2 @@
-.jekyll-cache*
-*DS_STORE*
-*swp
-_draft*
+_drafts/*
+.jekyll-cache

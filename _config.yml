@@ -1,72 +1,133 @@
-# Site
-name: "Thoughtlot"
-title: "Thoughtlot"
-description: "Jess Leung blogs about tech, management, and life"
-logo: 'assets/images/favicon.svg'
-favicon: 'assets/images/favicon.svg'
-font_family: Maven Pro
-baseurl: 
-google_analytics: 'UA-xxxxxxxx-1'
-disqus: 'demowebsite'
-mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
-include: ["_pages"]
-exclude: [README.md, Gemfile, Gemfile.lock, Makefile]
-permalink: /:categories/:title/
-email: jexxers@gmail.com
+# The Site Configuration
 
-# Plugins
-plugins:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-feed
-  - jekyll-seo-tag
-  - jekyll-archives
-  - jekyll-figure
-    
-# Archives
-jekyll-archives:
-  enabled:
-    - categories
-  layout: categories 
-  permalinks:
-   category: '/categories/:name/'
-    
-# Pagination 
-paginate: 6
-paginate_path: /page:num/
-    
-# Other
-highlighter: none
-markdown: kramdown
+theme: jekyll-theme-chirpy
+url: 'https://jexxers.github.io'
+baseurl: ''
+lang: en-US # https://www.w3.org/International/questions/qa-choosing-language-tags
+timezone: America/Toronto # http://www.timezoneconverter.com/cgi-bin/findzone/findzone
+title: Thoughtlot
+tagline: Mind, your thoughts is all I think about
+
+description: >-                        # used by seo meta and the atom feed
+  Life.  Tech.  Reflections.
+
+author: Jess Leung
+avatar: assets/images/avatar.jpg
+toc: true
+github:
+  username: jexxers
+twitter:
+  username: jexxers
+social:
+  name: Jess Leung
+  email: example@doamin.com             # change to your email address
+  links:
+    - https://twitter.com/jexxers
+    - https://github.com/jexxers
+
+google_site_verification: google_meta_tag_verification # change to your verification string
+google_analytics:
+  id: ''  
+  pv:
+    enabled: false
+    proxy_url: ''
+    proxy_endpoint: ''
+    cache: false
+
+theme_mode:   # [light|dark]
+
+# The CDN endpoint for images.
+# Notice that once it is assigned, the CDN url
+# will be added to all image (site avatar & posts' images) paths starting with '/'
+#
+# e.g. 'https://cdn.com'
+img_cdn: ''
+
+
+disqus:
+  comments: false  # boolean type, the global switch for posts comments.
+  shortname: ''    # Fill with your Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
+
+paginate: 10
+
+# ------------ The following options are not recommended to be modified ------------------
+
 kramdown:
-   syntax_highlighter_opts:
-      disable : true
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:   # Rouge Options › https://github.com/jneen/rouge#full-options
+    css_class: highlight
+    # default_lang: console
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
 
+# DO NOT change this unless you're a Pro user on Jekyll and Web development,
+# Or you think you're smart enough to change other relevant URLs within this template.
+permalink: /posts/:title/
 
-# Adsense (change to "enabled" to activate, also your client id and ad slot. Create a new ad unit from your Adsense account to get the slot.)
-adsense: "disabled"
-adsense-data-ad-client: "ca-pub-3412143450191416"
-adsense-data-ad-slot: "1363087678"
-
-# Lazy Images ("enabled" or "disabled")
-lazyimages: "disabled"
-
-# Post Author Box ("enabled" or "disabled")
-authorbox: "disabled"
-
-# Sass
-sass:
-  sass_dir: _sass
-  style: compressed
+collections:
+  tabs:
+    output: true
+    sort_by: order
 
 
 defaults:
-  - scope:
-      path: ""
-      type: "posts"
+  -
+    scope:
+      path: ''          # An empty string here means all files in the project
+      type: posts
     values:
-      layout: "post"
-  - scope:
-      path: ""
+      layout: post
+      comments: true    # Enable comments in posts.
+      toc: true         # Display TOC column in posts.
+  -
+    scope:
+      path: _drafts
     values:
-      layout: "default"
+      comments: false
+  -
+    scope:
+      path: ''
+      type: tabs             # see `site.collections`
+    values:
+      layout: page
+      permalink: /:title/
+      dynamic_title: true    # Hide title in mobile screens.
+
+sass:
+  style: compressed
+
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  profile: false
+  blanklines: false
+  ignore:
+    envs: [development]
+
+exclude:
+  - vendor
+  - Gemfile
+  - Gemfile.lock
+  - '*.gem'
+  - '*.gemspec'
+  - tools
+  - docs
+  - README.md
+  - LICENSE
+  - gulpfile.js
+  - node_modules
+  - package.json
+  - package-lock.json
+
+jekyll-archives:
+  enabled: [categories, tags]
+  layouts:
+    category: category
+    tag: tag
+  permalinks:
+    tag: /tags/:name/
+    category: /categories/:name/
