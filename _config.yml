@@ -34,7 +34,7 @@ google_analytics:
     proxy_endpoint: ''
     cache: false
 
-theme_mode:   # [light|dark]
+theme_mode:   dark
 
 # The CDN endpoint for images.
 # Notice that once it is assigned, the CDN url
