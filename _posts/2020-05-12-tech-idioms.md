@@ -1,6 +1,5 @@
 ---
 title: Tech Idioms
-date: 2020-05-12 00:00:00 -0400
 categories: Tech
 image:
   src: ../../assets/images/20200512_idioms.JPG

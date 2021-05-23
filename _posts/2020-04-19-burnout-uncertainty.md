@@ -1,6 +1,5 @@
 ---
 title: Burnout and Embracing Uncertainty
-date: 2020-04-19 00:00:00 -0400
 categories: Life
 image:
   src: ../../assets/images/20200419_finedog.jpeg

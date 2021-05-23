@@ -1,6 +1,5 @@
 ---
-title: Anatomy of a Machine Learning Teamwork
-date: 2020-05-02 00:00:00 -0400
+title: The Anatomy of Machine Learning Teamwork
 categories: Tech
 image:
   src: ../../assets/images/20200502_legoheads.jpeg
