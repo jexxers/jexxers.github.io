@@ -1,6 +1,5 @@
 ---
-title:  "Book: Talking to Strangers by Malcolm Gladwell"
-date: 2021-01-04 05:11:00 -0400
+title:  Talking to Strangers by Malcolm Gladwell
 categories: Life
 image:
   src: ../../assets/images/20210104_mask.jpeg
