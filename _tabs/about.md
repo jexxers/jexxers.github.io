@@ -1,12 +1,12 @@
 ---
 title: About
-image:
-  src: assets/images/about.jpg
-  alt: image alternative text
+icon: fas fa-info
 order: 1
 ---
 
-![img-description](../assets/images/about.jpg)
+{:refdef: style="text-align: center;"}
+![Hi!  I'm Jess!](../assets/images/about.jpg)
+{: refdef}
 
 
 👋 Hi, I'm Jess! 
